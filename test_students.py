@@ -40,6 +40,10 @@ class TestStudent(unittest.TestCase):
         print("test_alert_santa")
         self.student.alert_santa()
 
+    def test_apply_extension(self):
+        old_end_date = self.student.end_date
+        self.student.apply_extension(5)
+
 
 if __name__ == '__main__':
     unittest.main()
